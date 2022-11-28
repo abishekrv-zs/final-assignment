@@ -13,22 +13,22 @@ func New(db *sql.DB) store {
 	return store{db: db}
 }
 
-func (s store) getAll() ([]model.Student, error) {
+func (s store) GetAll() ([]model.Student, error) {
 	return nil, nil
 }
 
-func (s store) getById(id string) (model.Student, error) {
+func (s store) GetById(id string) (model.Student, error) {
 	return model.Student{}, nil
 }
 
-func (s store) create(student model.Student) (model.Student, error) {
+func (s store) Create(student model.Student) (model.Student, error) {
 	return model.Student{}, nil
 }
 
-func (s store) update(id string) (model.Student, error) {
+func (s store) Update(id string) (model.Student, error) {
 	return model.Student{}, nil
 }
 
-func (s store) delete(id string) (model.Student, error) {
+func (s store) Delete(id string) (model.Student, error) {
 	return model.Student{}, nil
 }

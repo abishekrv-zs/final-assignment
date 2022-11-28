@@ -1,34 +1,34 @@
 package company
 
 import (
-	"database/sql"
 	"github.com/abishekrv-zs/final-assignment/model"
+	"github.com/abishekrv-zs/final-assignment/store"
 )
 
 type svc struct {
-	db *sql.DB
+	store store.CompanyStore
 }
 
-func New(db *sql.DB) svc {
-	return svc{db: db}
+func New(store store.CompanyStore) svc {
+	return svc{store: store}
 }
 
-func (s svc) getAll() ([]model.Company, error) {
+func (s svc) GetAll() ([]model.Company, error) {
 	return nil, nil
 }
 
-func (s svc) getById(id string) (model.Company, error) {
+func (s svc) GetById(id string) (model.Company, error) {
 	return model.Company{}, nil
 }
 
-func (s svc) create(c model.Company) (model.Company, error) {
+func (s svc) Create(c model.Company) (model.Company, error) {
 	return model.Company{}, nil
 }
 
-func (s svc) update(id string) (model.Company, error) {
+func (s svc) Update(id string) (model.Company, error) {
 	return model.Company{}, nil
 }
 
-func (s svc) delete(id string) (model.Company, error) {
+func (s svc) Delete(id string) (model.Company, error) {
 	return model.Company{}, nil
 }
