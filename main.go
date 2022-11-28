@@ -2,12 +2,12 @@ package main
 
 import (
 	"database/sql"
-	deliveryCompany "github.com/abishekrv-zs/final-assignment/delivery/company"
-	deliveryStudent "github.com/abishekrv-zs/final-assignment/delivery/student"
-	storeCompany "github.com/abishekrv-zs/final-assignment/store/company"
-	storeStudent "github.com/abishekrv-zs/final-assignment/store/student"
-	svcCompany "github.com/abishekrv-zs/final-assignment/svc/company"
-	svcStudent "github.com/abishekrv-zs/final-assignment/svc/student"
+	deliveryCompany "github.com/abishekrv-zs/placement-api/delivery/company"
+	deliveryStudent "github.com/abishekrv-zs/placement-api/delivery/student"
+	storeCompany "github.com/abishekrv-zs/placement-api/store/company"
+	storeStudent "github.com/abishekrv-zs/placement-api/store/student"
+	svcCompany "github.com/abishekrv-zs/placement-api/svc/company"
+	svcStudent "github.com/abishekrv-zs/placement-api/svc/student"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"

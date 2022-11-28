@@ -1,4 +1,4 @@
-module github.com/abishekrv-zs/final-assignment
+module github.com/abishekrv-zs/placement-api
 
 go 1.19
 
