@@ -5,30 +5,30 @@ import (
 	"github.com/abishekrv-zs/final-assignment/model"
 )
 
-type store struct {
+type Store struct {
 	db *sql.DB
 }
 
-func New(db *sql.DB) store {
-	return store{db: db}
+func New(db *sql.DB) Store {
+	return Store{db: db}
 }
 
-func (s store) GetAll() ([]model.Company, error) {
+func (s Store) GetAll() ([]model.Company, error) {
 	return nil, nil
 }
 
-func (s store) GetById(id string) (model.Company, error) {
+func (s Store) GetById(id string) (model.Company, error) {
 	return model.Company{}, nil
 }
 
-func (s store) Create(c model.Company) (model.Company, error) {
+func (s Store) Create(c model.Company) (model.Company, error) {
 	return model.Company{}, nil
 }
 
-func (s store) Update(id string) (model.Company, error) {
+func (s Store) Update(id string) (model.Company, error) {
 	return model.Company{}, nil
 }
 
-func (s store) Delete(id string) (model.Company, error) {
+func (s Store) Delete(id string) (model.Company, error) {
 	return model.Company{}, nil
 }

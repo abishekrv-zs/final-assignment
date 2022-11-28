@@ -5,30 +5,30 @@ import (
 	"net/http"
 )
 
-type delivery struct {
+type Delivery struct {
 	svc svc.CompanySvc
 }
 
-func New(svc svc.CompanySvc) delivery {
-	return delivery{svc: svc}
+func New(svc svc.CompanySvc) Delivery {
+	return Delivery{svc: svc}
 }
 
-func (h delivery) GetAll(w http.ResponseWriter, r *http.Request) {
-
-}
-
-func (h delivery) GetById(w http.ResponseWriter, r *http.Request) {
+func (h Delivery) GetAll(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func (h delivery) Create(w http.ResponseWriter, r *http.Request) {
+func (h Delivery) GetById(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func (h delivery) Update(w http.ResponseWriter, r *http.Request) {
+func (h Delivery) Create(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func (h delivery) Delete(w http.ResponseWriter, r *http.Request) {
+func (h Delivery) Update(w http.ResponseWriter, r *http.Request) {
+
+}
+
+func (h Delivery) Delete(w http.ResponseWriter, r *http.Request) {
 
 }
